@@ -196,84 +196,134 @@ function App() {
       <main className="pt-16">
         {/* Hero Section */}
         <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-purple-500/10 to-transparent pointer-events-none"></div>
-          <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-          
-          {/* Animated background elements */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -inset-[10px] opacity-50">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-blue-500/30 rounded-full blur-[128px] animate-pulse"></div>
-              <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] bg-purple-500/20 rounded-full blur-[128px] animate-pulse delay-1000"></div>
+          {/* Enhanced background effects */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 opacity-90"></div>
+            <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+            
+            {/* Animated circles */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute -inset-[10px] opacity-50">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem]">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000 translate-x-[100px]"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse delay-2000 -translate-x-[100px]"></div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="text-center text-white relative z-10 animate-fade-in-up max-w-4xl mx-auto px-4">
-            <div className="space-y-8">
-              <div className="relative">
-                <div className="absolute inset-0 blur-3xl bg-gradient-to-r from-blue-500/30 via-purple-500/30 to-pink-500/30 rounded-full transform scale-150 animate-pulse"></div>
-                <div className="relative">
-                  <div className="inline-block p-3 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 backdrop-blur-sm mb-6 group hover:scale-110 transition-transform duration-300">
-                    <span className="text-3xl animate-wave inline-block">👋</span>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div className="text-center">
+              {/* Profile Image */}
+              <div className="mb-12 relative inline-block group">
+                {/* Large outer glow */}
+                <div className="absolute -inset-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full opacity-50 blur-[32px] group-hover:opacity-75 transition-opacity duration-500"></div>
+                
+                {/* Medium glow */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-40 blur-xl"></div>
+                
+                {/* Close glow */}
+                <div className="absolute -inset-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-40 blur-sm"></div>
+                
+                {/* Image container */}
+                <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden transform transition-transform duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
+                  <img
+                    src="/profile.jpg"
+                    alt="Jijo Daniel"
+                    className="w-full h-full object-cover object-[center_35%]"
+                  />
+                </div>
+              </div>
+
+              {/* Greeting */}
+              <div className="mb-8">
+                <div className="inline-block p-2 px-4 rounded-full bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 backdrop-blur-sm mb-4 group hover:scale-110 transition-all duration-300">
+                  <span className="text-2xl animate-wave inline-block">👋</span>
+                  <span className="ml-2 text-gray-300">Hello, I'm</span>
+                </div>
+                <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 drop-shadow-lg animate-gradient">
+                  JIJO DANIEL
+                </h1>
+                <div className="relative inline-flex items-center justify-center group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-lg rounded-lg transform group-hover:scale-110 transition-transform duration-300"></div>
+                  <h2 className="relative text-2xl md:text-3xl text-gray-300 font-light tracking-wide px-4 py-2">
+                    Senior Software Developer
+                  </h2>
+                </div>
+              </div>
+
+              {/* Quick Info */}
+              <div className="mb-12 space-y-4">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-gray-300">
+                  <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300">
+                    <span className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">📍</span>
+                    <span>Toronto, Ontario</span>
                   </div>
-                  <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg animate-gradient">
-                    JIJO DANIEL
-                  </h1>
-                  <div className="relative inline-block">
-                    <p className="text-2xl md:text-3xl mb-3 text-gray-300 font-light">
-                      Senior Software Developer
-                    </p>
-                    <div className="h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent w-full"></div>
+                  <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300">
+                    <span className="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">💼</span>
+                    <span>5.3+ Years Experience</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300">
+                    <span className="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center">🎯</span>
+                    <span>Available for Opportunities</span>
                   </div>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <p className="text-xl md:text-2xl text-blue-200 flex items-center justify-center gap-2">
-                  <span className="inline-block w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-                    📍
-                  </span>
-                  Toronto, Ontario
-                </p>
-                <div className="flex flex-col md:flex-row justify-center items-center gap-3 text-gray-300 text-lg">
-                  <div className="flex items-center gap-2">
-                    <span className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">📱</span>
-                    <span>(437) 985-5859</span>
-                  </div>
-                  <span className="hidden md:inline text-blue-500/50">•</span>
-                  <div className="flex items-center gap-2">
-                    <span className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">✉️</span>
-                    <span>jijodaniel95@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col md:flex-row justify-center gap-6 pt-6">
+              {/* Action Buttons */}
+              <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                 <a
                   href="https://www.linkedin.com/in/jijo-daniel/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative"
                 >
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-200"></div>
-                  <button className="relative bg-gradient-to-r from-blue-600/90 to-blue-700/90 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 backdrop-blur-md flex items-center justify-center gap-3 hover:gap-5">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-200 animate-pulse"></div>
+                  <button className="relative px-8 py-4 bg-gradient-to-r from-blue-600/90 to-blue-700/90 hover:from-blue-500 hover:to-blue-600 text-white rounded-full font-semibold shadow-lg transition-all duration-300 backdrop-blur-md flex items-center justify-center gap-3 hover:gap-5">
                     <FaLinkedin className="text-2xl transform group-hover:scale-110 transition-all duration-200" />
                     <span>LinkedIn</span>
                     <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
                   </button>
                 </a>
+
                 <a
                   href="https://github.com/jijodaniel95"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative"
                 >
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-200"></div>
-                  <button className="relative bg-gradient-to-r from-gray-800/90 to-gray-900/90 hover:from-gray-700 hover:to-gray-800 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition-all duration-300 backdrop-blur-md flex items-center justify-center gap-3 hover:gap-5">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-gray-700 to-gray-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-200 animate-pulse"></div>
+                  <button className="relative px-8 py-4 bg-gradient-to-r from-gray-800/90 to-gray-900/90 hover:from-gray-700 hover:to-gray-800 text-white rounded-full font-semibold shadow-lg transition-all duration-300 backdrop-blur-md flex items-center justify-center gap-3 hover:gap-5">
                     <FaGithub className="text-2xl transform group-hover:scale-110 transition-all duration-200" />
                     <span>GitHub</span>
                     <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
                   </button>
                 </a>
+
+                <a
+                  href="/resume/Jijo_Daniel_Resume.pdf"
+                  download
+                  className="group relative"
+                >
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-200 animate-pulse"></div>
+                  <button className="relative px-8 py-4 bg-gradient-to-r from-purple-600/90 to-pink-700/90 hover:from-purple-500 hover:to-pink-600 text-white rounded-full font-semibold shadow-lg transition-all duration-300 backdrop-blur-md flex items-center justify-center gap-3 hover:gap-5">
+                    <svg className="w-6 h-6 transform group-hover:scale-110 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>Download Resume</span>
+                    <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
+                  </button>
+                </a>
+              </div>
+
+              {/* Scroll Indicator */}
+              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+                <span className="text-gray-400 mb-2">Scroll Down</span>
+                <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
               </div>
             </div>
           </div>
@@ -938,7 +988,7 @@ function App() {
                   >
                     <div className="bg-purple-500/10 p-4 rounded-lg">
                       <svg className="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2z" />
                       </svg>
                     </div>
                     <div>
