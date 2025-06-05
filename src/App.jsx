@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { FaHome, FaUser, FaBriefcase, FaTools, FaGraduationCap, FaEnvelope, FaLinkedin, FaGithub, FaCode, FaDatabase, FaCloud, FaServer, FaAward, FaTrophy, FaCertificate, FaJava } from 'react-icons/fa'
+import { FaHome, FaUser, FaBriefcase, FaTools, FaGraduationCap, FaEnvelope, FaLinkedin, FaGithub, FaCode, FaDatabase, FaCloud, FaServer, FaAward, FaTrophy, FaCertificate, FaJava, FaStar } from 'react-icons/fa'
 
 const navItems = [
   { id: 'home', label: 'Home', icon: <FaHome /> },
@@ -949,6 +949,127 @@ function App() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Recommendations Section */}
+        <section className="py-20 bg-slate-900/60 backdrop-blur-md">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Recommendations</h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+              <p className="mt-4 text-gray-300 text-lg">What people say about my work</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                          {/* Recommendation 3 */}
+                          <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-pink-500/20 to-blue-500/20 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                <div className="relative bg-slate-900/50 backdrop-blur-xl p-8 rounded-xl border border-slate-700/50 h-full">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="relative">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-pulse"></div>
+                      <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
+                        SN
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-pink-400">Santhosh NK</h3>
+                      <p className="text-gray-400">Lead Consultant at Infosys</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex text-yellow-400 mb-2">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                    <p className="text-gray-300 italic line-clamp-6 hover:line-clamp-none transition-all duration-300">
+                      "I had the pleasure of working with Jijo during a critical phase of GCP platform setup and legacy platform transformation, where I served as the Technical Architect. Jijo played a key role in the setup of the GCP middleware platform for microservices and a pivotal initiative that enabled our successful transition from a legacy platform to ESA. His production-ready PoC for Java EJB application hosted on WebLogic to TomEE containerization on GCP saved millions for the customers and was highly appreciated by the leadership team."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Recommendation 1 */}
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                <div className="relative bg-slate-900/50 backdrop-blur-xl p-8 rounded-xl border border-slate-700/50 h-full">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="relative">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"></div>
+                      <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
+                        AG
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-blue-400">Abhik Himadri Ghose</h3>
+                      <p className="text-gray-400">Project Manager | ex IBM | ex Infosys</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex text-yellow-400 mb-2">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                    <p className="text-gray-300 italic line-clamp-6 hover:line-clamp-none transition-all duration-300">
+                      "It was a privilege to be Jijo's first reporting manager and witness his growth firsthand. When assembling my project team, I specifically selected Jijo for his exceptional potential, and he exceeded all expectations from day one, standing out as a proactive problem-solver with a keen eye for innovation. Jijo played a pivotal role in transforming legacy Fusion APIs into modern Microservices (MSA), seamlessly balancing dual responsibilities as both a developer and API designer. His deep technical expertise and strategic thinking ensured the transition was smooth, scalable, and aligned with architectural best practices."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Recommendation 2 */}
+              <div className="group relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                <div className="relative bg-slate-900/50 backdrop-blur-xl p-8 rounded-xl border border-slate-700/50 h-full">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="relative">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 animate-pulse"></div>
+                      <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">
+                        NK
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-purple-400">Nithesh Kumar</h3>
+                      <p className="text-gray-400">Senior Software Engineer</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex text-yellow-400 mb-2">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                    <p className="text-gray-300 italic line-clamp-6 hover:line-clamp-none transition-all duration-300">
+                      "I had the privilege of working with Jijo, and I can confidently say he is one of the most talented backend developers I have ever met. His expertise spans Google Cloud, NGINX, Kubernetes, Golang, and Java, and he consistently impressed me with his ability to design and implement robust, scalable solutions. What sets Jijo apart is his out-of-the-box thinking and creative problem-solving skills. He approaches challenges with a unique perspective and always finds efficient, innovative solutions."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* LinkedIn Link */}
+            <div className="mt-12 text-center">
+              <a
+                href="https://www.linkedin.com/in/jijo-daniel/details/recommendations/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600/90 to-blue-700/90 hover:from-blue-500 hover:to-blue-600 text-white rounded-full transition-all duration-300"
+              >
+                <FaLinkedin className="text-xl" />
+                <span>View More Recommendations on LinkedIn</span>
+                <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
+              </a>
             </div>
           </div>
         </section>
