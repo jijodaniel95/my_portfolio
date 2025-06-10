@@ -347,7 +347,7 @@ function App() {
                     </div>
                     <div className="space-y-4">
                       <p className="text-lg">
-                        Java Developer with <span className="text-blue-400 font-semibold">5.3 years</span> of hands-on experience across the software development lifecycle. Skilled in developing scalable and high-performance enterprise applications using Spring Boot and Core Java. Proficient in ORM frameworks such as Hibernate and JPA.
+                        Java Developer with <span className="text-blue-400 font-semibold">6 years</span> of hands-on experience across the software development lifecycle. Skilled in developing scalable and high-performance enterprise applications using Spring Boot and Core Java. Proficient in ORM frameworks such as Hibernate and JPA.
                       </p>
                       <p className="text-lg">
                         Experienced in microservices architecture using Spring Boot and REST APIs. Developed and maintained RESTful (JAX-RS, Spring Boot) and SOAP web services with Swagger and WADL documentation integration. Comfortable with UNIX systems and Shell scripting for automation and environment management.
