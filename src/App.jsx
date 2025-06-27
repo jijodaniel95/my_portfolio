@@ -263,7 +263,7 @@ function App() {
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300">
                     <span className="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">💼</span>
-                    <span>5.3+ Years Experience</span>
+                    <span>6 Years Experience</span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300">
                     <span className="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center">🎯</span>
@@ -319,7 +319,7 @@ function App() {
               </div>
 
               {/* Scroll Indicator */}
-              <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
                 <span className="text-gray-400 mb-2">Scroll Down</span>
                 <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -406,7 +406,7 @@ function App() {
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="bg-slate-800/50 p-4 rounded-lg border border-slate-700/50">
                     <div className="text-center">
-                      <div className="text-3xl font-bold text-blue-400 mb-2">5.3+</div>
+                      <div className="text-3xl font-bold text-blue-400 mb-2">6</div>
                       <div className="text-gray-400">Years Experience</div>
                     </div>
                   </div>
@@ -458,27 +458,35 @@ function App() {
                         <ul className="list-none space-y-3 text-gray-300">
                           <li className="flex items-start gap-3">
                             <span className="text-blue-400 mt-1">→</span>
-                            <span>Spearheaded the development of 50+ RESTful microservices using Spring Boot and Golang, deployed across distributed systems, ensuring system interoperability and scalability.</span>
+                            <span>Spearheaded the development of more than 50 RESTful microservices using Spring Boot and Golang, deployed across distributed systems, ensuring system interoperability and scalability.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-blue-400 mt-1">→</span>
-                            <span>Orchestrated migration of 100+ microservices from OpenShift to GCP, reducing infrastructure costs by 40%.</span>
+                            <span>Orchestrated the seamless migration of more than 100 microservices from OpenShift to Google Cloud Platform (GCP), yielding an estimated 40% reduction in infrastructure costs.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-blue-400 mt-1">→</span>
-                            <span>Engineered NGINX-based routing solutions for optimized traffic distribution and peak load management with minimal latency.</span>
+                            <span>Leveraged ORM frameworks such as Hibernate and JPA for robust and efficient data persistence.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-blue-400 mt-1">→</span>
-                            <span>Utilized GKE for containerized application management, ensuring high availability and scalability.</span>
+                            <span>Engineered NGINX-based routing solutions that optimized traffic distribution processes, effectively managing peak load times with minimal latency.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-blue-400 mt-1">→</span>
-                            <span>Upgraded Java monolithic design to Microservice architecture using Kafka, Spring Boot, Docker, and Kubernetes.</span>
+                            <span>Utilized Google Kubernetes Engine (GKE) to manage and orchestrate containerized applications, ensuring high availability and scalability.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-blue-400 mt-1">→</span>
-                            <span>Achieved 100% project delivery with less than 2% defect rate across multiple high-stakes projects.</span>
+                            <span>Developed Java/J2EE code with OOP concepts, and involved in Peer code reviews.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Executed the timely delivery of Java-based applications for multiple projects, consistently meeting 100% of project deadlines with less than 2% defect rate.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Designed and implemented message-driven architectures utilizing Kafka for asynchronous communication across distributed systems.</span>
                           </li>
                         </ul>
                       </div>
@@ -504,23 +512,31 @@ function App() {
                         <ul className="list-none space-y-3 text-gray-300">
                           <li className="flex items-start gap-3">
                             <span className="text-purple-400 mt-1">→</span>
-                            <span>Engineered and optimized 40+ server-side RESTful APIs using Spring Boot and Go, achieving 99.9% uptime.</span>
+                            <span>Engineered over 40 server-side RESTful APIs utilizing SpringBoot and Go, achieving a 99.9% uptime.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-purple-400 mt-1">→</span>
-                            <span>Developed Go proxies for GCP Transformation, ensuring seamless integration and performance.</span>
+                            <span>Developed Go proxies as part of the GCP Transformation, contributing to successful release activities and ensuring seamless integration and performance.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-purple-400 mt-1">→</span>
-                            <span>Created shell scripts to automate compilation, packaging, and deployment of MSA services in Apache TomEE.</span>
+                            <span>Created shell scripts to automate the compilation, packaging, and deployment of MSA services in Apache TomEE.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-purple-400 mt-1">→</span>
-                            <span>Developed SOAP APIs for legacy system integrations, connecting 15+ key applications.</span>
+                            <span>Created API designs using OpenAPI 3.x.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-purple-400 mt-1">→</span>
-                            <span>Reduced incident response times by 50% through comprehensive root cause analyses.</span>
+                            <span>Developed and deployed SOAP APIs to accommodate legacy system integrations, resulting in a seamless connection for over 15 key applications.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-purple-400 mt-1">→</span>
+                            <span>Developed and maintained documentation for system architecture, configurations, and troubleshooting guides, improving team collaboration.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-purple-400 mt-1">→</span>
+                            <span>Conducted comprehensive root cause analyses on production issues, reducing incident response times by 50%.</span>
                           </li>
                         </ul>
                       </div>
@@ -537,7 +553,7 @@ function App() {
                           <div className="absolute inset-0 bg-pink-400 rounded-full animate-ping opacity-75"></div>
                         </div>
                         <h3 className="text-xl font-semibold text-pink-400 mb-2">Software Engineer</h3>
-                        <p className="text-gray-300 mb-1">Coolminds Technologies(P) Ltd</p>
+                        <p className="text-gray-300 mb-1">Coolminds Technologies(P) Ltd, India</p>
                         <p className="text-gray-400 text-sm">July 2019 - November 2021</p>
                       </div>
                     </div>
@@ -550,7 +566,7 @@ function App() {
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-pink-400 mt-1">→</span>
-                            <span>Developed RESTful APIs using Spring Boot and Structs, increasing development speed by 25%.</span>
+                            <span>Developed RESTful APIs using Spring Boot and Structs to enable communication between different components of the application, increasing development speed by 25%.</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-pink-400 mt-1">→</span>
@@ -558,7 +574,57 @@ function App() {
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="text-pink-400 mt-1">→</span>
-                            <span>Developed and tested Java-based programs ensuring robust technical design and implementation.</span>
+                            <span>Developed unit test cases, ensuring robustness and reliability of the systems.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-pink-400 mt-1">→</span>
+                            <span>Collaborated with cross-functional teams including product managers and QA engineers to gather requirements and deliver high-quality software solutions on schedule.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-pink-400 mt-1">→</span>
+                            <span>Wrote and maintained SQL queries and stored procedures for data manipulation and retrieval, supporting application functionalities.</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Coolminds Intern Role */}
+                <div className="relative group">
+                  <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+                    <div className="md:text-right mb-8 md:mb-0 md:pr-8">
+                      <div className="bg-slate-800/60 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-700/50 group-hover:border-blue-500/50 relative">
+                        <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-500 rounded-full hidden md:block">
+                          <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-75"></div>
+                        </div>
+                        <h3 className="text-xl font-semibold text-blue-400 mb-2">Software Engineer Intern</h3>
+                        <p className="text-gray-300 mb-1">Coolminds Technologies(P) Ltd, India</p>
+                        <p className="text-gray-400 text-sm">January 2019 - July 2019</p>
+                      </div>
+                    </div>
+                    <div className="md:pl-8">
+                      <div className="bg-slate-800/60 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-700/50 group-hover:border-blue-500/50">
+                        <ul className="list-none space-y-3 text-gray-300">
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Collaborated with senior developers to design and implement web application modules using Core Java and Spring MVC, enhancing overall application responsiveness by 20%.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Assisted in developing RESTful APIs with Spring Boot to facilitate front-end/back-end integration, improving data flow efficiency by 25%.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Contributed to unit testing using JUnit and Mockito, raising code coverage to eighty-five percent and ensuring early defect detection.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Participated in daily Scrum ceremonies and code reviews, adopting Agile best practices to streamline feature delivery.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-blue-400 mt-1">→</span>
+                            <span>Documented technical specifications and API endpoints, improving clarity for team members and future development.</span>
                           </li>
                         </ul>
                       </div>
