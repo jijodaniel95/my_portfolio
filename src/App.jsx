@@ -10,38 +10,6 @@ const navItems = [
   { id: 'contact', label: 'Contact', icon: <FaEnvelope /> },
 ]
 
-const skillCategories = [
-  {
-    title: 'Languages & Frameworks',
-    icon: <FaCode className="text-2xl mb-4 text-blue-400" />,
-    skills: [
-      { name: 'Java', level: 90 },
-      { name: 'Spring Boot', level: 85 },
-      { name: 'JavaScript', level: 80 },
-      { name: 'React', level: 85 },
-    ]
-  },
-  {
-    title: 'Cloud & DevOps',
-    icon: <FaCloud className="text-2xl mb-4 text-blue-400" />,
-    skills: [
-      { name: 'AWS', level: 80 },
-      { name: 'Docker', level: 85 },
-      { name: 'Kubernetes', level: 75 },
-      { name: 'CI/CD', level: 85 },
-    ]
-  },
-  {
-    title: 'Database & Tools',
-    icon: <FaDatabase className="text-2xl mb-4 text-blue-400" />,
-    skills: [
-      { name: 'PostgreSQL', level: 85 },
-      { name: 'MongoDB', level: 80 },
-      { name: 'Git', level: 90 },
-      { name: 'Maven', level: 85 },
-    ]
-  }
-]
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -249,7 +217,7 @@ function App() {
                 <div className="relative inline-flex items-center justify-center group">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-lg rounded-lg transform group-hover:scale-110 transition-transform duration-300"></div>
                   <h2 className="relative text-2xl md:text-3xl text-gray-300 font-light tracking-wide px-4 py-2">
-                    Senior Software Developer
+                    Senior Java Developer
                   </h2>
                 </div>
               </div>
@@ -266,8 +234,8 @@ function App() {
                     <span>6 Years Experience</span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 backdrop-blur-sm hover:bg-slate-800/70 transition-all duration-300">
-                    <span className="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center">🎯</span>
-                    <span>Available for Opportunities</span>
+                    <span className="w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center">🏦</span>
+                    <span>Currently at RBC</span>
                   </div>
                 </div>
               </div>
@@ -347,7 +315,7 @@ function App() {
                     </div>
                     <div className="space-y-4">
                       <p className="text-lg">
-                        Java Developer with <span className="text-blue-400 font-semibold">6 years</span> of hands-on experience across the software development lifecycle. Skilled in developing scalable and high-performance enterprise applications using Spring Boot and Core Java. Proficient in ORM frameworks such as Hibernate and JPA.
+                        Senior Java Developer with <span className="text-blue-400 font-semibold">6 years</span> of hands-on experience across the software development lifecycle, currently building enterprise-grade banking applications at <span className="text-emerald-400 font-semibold">Royal Bank of Canada (RBC)</span>. Skilled in developing scalable and high-performance financial systems using Spring Boot and Core Java. Proficient in ORM frameworks such as Hibernate and JPA.
                       </p>
                       <p className="text-lg">
                         Experienced in microservices architecture using Spring Boot and REST APIs. Developed and maintained RESTful (JAX-RS, Spring Boot) and SOAP web services with Swagger and WADL documentation integration. Comfortable with UNIX systems and Shell scripting for automation and environment management.
@@ -440,6 +408,81 @@ function App() {
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500/50 via-purple-500/50 to-pink-500/50 rounded-full hidden md:block"></div>
               
               <div className="space-y-12">
+                {/* J&M Group - RBC Role */}
+                <div className="relative group">
+                  <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
+                    <div className="md:text-right mb-8 md:mb-0 md:pr-8">
+                      <div className="bg-slate-800/60 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-700/50 group-hover:border-emerald-500/50 relative">
+                        <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-emerald-500 rounded-full hidden md:block">
+                          <div className="absolute inset-0 bg-emerald-400 rounded-full animate-ping opacity-75"></div>
+                        </div>
+                        <div className="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-2">CURRENT</div>
+                        <h3 className="text-xl font-semibold text-emerald-400 mb-2">Senior Java Developer</h3>
+                        <p className="text-gray-300 mb-1">J&M Group Inc (Client: Royal Bank of Canada – RBC), Canada</p>
+                        <p className="text-gray-400 text-sm">August 2025 - Present</p>
+                      </div>
+                    </div>
+                    <div className="md:pl-8">
+                      <div className="bg-slate-800/60 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-700/50 group-hover:border-emerald-500/50">
+                        <ul className="list-none space-y-3 text-gray-300">
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Developing enterprise-grade banking applications using Spring Boot within a distributed microservices architecture.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Designing scalable microservices to support high-volume financial transaction systems.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Implementing event-driven architecture using Apache Kafka for reliable, asynchronous communication.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Handling high-throughput transaction processing systems ensuring reliability and fault tolerance.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Utilizing Redis caching to improve performance and reduce latency in critical services.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Leading migration of 80+ services from Jenkins to GitHub Actions, modernizing CI/CD pipelines.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Improving deployment time by streamlining CI/CD workflows using GitHub Actions.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Designing and maintaining robust CI/CD pipelines for automated build, test, and deployment.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Working across the full SDLC from business requirements to production deployment.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Collaborating with stakeholders to translate business needs into scalable technical solutions.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Developing secure, high-availability REST APIs for financial systems.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Troubleshooting production issues and ensuring system stability.</span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="text-emerald-400 mt-1">→</span>
+                            <span>Participating in Agile/Scrum ceremonies and contributing to code reviews.</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Infosys Senior Role */}
                 <div className="relative group">
                   <div className="md:grid md:grid-cols-2 md:gap-8 items-center">
@@ -698,7 +741,11 @@ function App() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="text-purple-400">•</span>
-                    <span>DevOps & CI/CD Tools</span>
+                    <span>Redis, Apache Kafka</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-purple-400">•</span>
+                    <span>GitHub Actions, Jenkins CI/CD</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="text-purple-400">•</span>
@@ -1250,7 +1297,7 @@ function App() {
                   JD
                 </div>
               </div>
-              <p className="mt-2 text-gray-400">Senior Software Developer</p>
+              <p className="mt-2 text-gray-400">Senior Java Developer</p>
             </div>
 
             <div className="text-center">
