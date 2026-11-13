@@ -108,8 +108,8 @@ svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-widt
 
 /* Layout */
 main > section { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
-.section { padding-block: clamp(4.5rem, 10vw, 7.5rem); }
-.section-head { max-width: 720px; margin-bottom: 3rem; }
+.section { padding-block: clamp(3.25rem, 6.5vw, 5rem); }
+.section-head { max-width: 720px; margin-bottom: 2.75rem; }
 .kicker {
   display: inline-flex; align-items: center; gap: .5rem; margin: 0 0 1rem;
   font: 500 .85rem/1 var(--mono); color: var(--cyan);
@@ -337,7 +337,7 @@ details[open] > .points { animation: open .35s var(--ease); }
 .js:not(.reduce) .f3 { animation-delay: 1.2s, -4s; }
 .hero-visual { transition: transform .6s var(--ease); }
 
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease), border-color .3s, box-shadow .35s; transition-delay: var(--d, 0ms); }
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease), border-color .3s, box-shadow .35s; transition-delay: var(--d, 0ms); }
 .reveal.in { opacity: 1; transform: none; }
 
 /* Responsive */

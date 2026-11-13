@@ -134,7 +134,7 @@
           io.unobserve(el);
         });
       },
-      { threshold: 0.01, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.01, rootMargin: "0px 0px 12% 0px" }
     );
     items.forEach((el) => io.observe(el));
   }
