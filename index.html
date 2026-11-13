@@ -1,14 +1,471 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jijo Daniel | Senior Software Developer</title>
-    <meta name="description" content="Jijo Daniel - Senior Software Developer with expertise in Java, Spring Boot, and Cloud Technologies" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jijo Daniel | Senior Java Developer</title>
+  <meta name="description" content="Jijo Daniel is a Toronto-based senior Java backend developer building banking-grade Spring Boot microservices with Kafka and Google Cloud.">
+  <meta name="theme-color" content="#070B14">
+  <meta name="author" content="Jijo Daniel">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jijo-daniel.onrender.com/">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Link previews (LinkedIn, WhatsApp, Slack, email) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Jijo Daniel">
+  <meta property="og:title" content="Jijo Daniel | Senior Java Developer">
+  <meta property="og:description" content="Senior Java developer in Toronto building banking-grade microservices with Spring Boot, Apache Kafka and Google Cloud.">
+  <meta property="og:url" content="https://jijo-daniel.onrender.com/">
+  <meta property="og:image" content="https://jijo-daniel.onrender.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jijo Daniel, Senior Java Developer, with Java 17, Spring Boot, Kafka and GCP">
+  <meta property="og:locale" content="en_CA">
+  <meta property="profile:first_name" content="Jijo">
+  <meta property="profile:last_name" content="Daniel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jijo Daniel | Senior Java Developer">
+  <meta name="twitter:description" content="Senior Java developer in Toronto building banking-grade microservices with Spring Boot, Apache Kafka and Google Cloud.">
+  <meta name="twitter:image" content="https://jijo-daniel.onrender.com/assets/og-image.jpg">
+
+  <!-- Structured profile data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jijo Daniel",
+    "jobTitle": "Senior Java Developer",
+    "url": "https://jijo-daniel.onrender.com/",
+    "image": "https://jijo-daniel.onrender.com/assets/profile.jpg",
+    "email": "mailto:jijodaniel95@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+    "sameAs": ["https://www.linkedin.com/in/jijo-daniel/"],
+    "knowsAbout": ["Java", "Spring Boot", "Apache Kafka", "Google Cloud Platform", "Kubernetes", "Microservices", "Event-driven architecture", "Redis", "CI/CD"],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Saintgits College of Engineering" },
+      { "@type": "CollegeOrUniversity", "name": "Parumala Mar Gregorious College" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="bg" aria-hidden="true"><div class="glow g1"></div><div class="glow g2"></div><div class="grid"></div></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Jijo Daniel, back to top"><span class="logo">JD</span><span class="brand-name">Jijo Daniel</span></a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#case-studies">Case studies</a>
+      <a href="#skills">Skills</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm btn-ghost header-cta" href="assets/Jijo-Daniel-Resume.pdf" download>Resume</a>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="status"><span class="dot"></span>Open to senior Java roles in Toronto</p>
+        <h1>Jijo Daniel</h1>
+        <p class="title">Senior Java Developer building banking-grade microservices.</p>
+        <p class="lede">Six years turning legacy enterprise systems into fast, fault-tolerant cloud services with Spring Boot, Apache Kafka and Google Cloud. Currently engineering high-volume transaction systems for Royal Bank of Canada.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="assets/Jijo-Daniel-Resume.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+            Download resume
+          </a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="meta">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Toronto, Ontario</li>
+          <li><a href="https://www.linkedin.com/in/jijo-daniel/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a></li>
+          <li><a href="mailto:jijodaniel95@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>jijodaniel95@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait">
+          <img src="assets/profile.jpg" alt="Portrait of Jijo Daniel" width="720" height="900">
+        </div>
+        <span class="chip float f1">Spring Boot</span>
+        <span class="chip float f2">Apache Kafka</span>
+        <span class="chip float f3">GCP · GKE</span>
+        <div class="terminal" aria-label="Terminal showing services running">
+          <div class="term-bar"><i></i><i></i><i></i><span>payments-cluster</span></div>
+          <pre id="term" class="term-body"><code></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Key numbers">
+      <div class="stat card"><span class="num" data-count="6" data-suffix="+">6+</span><span class="label">Years building Java backends</span></div>
+      <div class="stat card"><span class="num" data-count="100" data-suffix="+">100+</span><span class="label">Microservices migrated to Google Cloud</span></div>
+      <div class="stat card"><span class="num" data-count="40" data-suffix="%">40%</span><span class="label">Infrastructure cost reduction</span></div>
+      <div class="stat card"><span class="num" data-count="80" data-suffix="+">80+</span><span class="label">CI/CD pipelines moved to GitHub Actions</span></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="section-head">
+        <p class="kicker">About</p>
+        <h2 id="about-h">I modernize the systems businesses run on</h2>
+        <p class="section-lede">From EJB monoliths to Java 17 microservices, I own the whole path: architecture, code, pipelines and production. My focus is systems that stay fast and available under real financial load.</p>
+      </div>
+      <div class="cards-3">
+        <article class="card feature">
+          <div class="feature-head"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="18" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="10" width="7" height="5" rx="1.5"/><rect x="14" y="17" width="7" height="4" rx="1.5"/></svg></div><h3>Legacy modernization</h3></div>
+          <p>Breaking EJB-based monoliths into Spring Boot services, cutting technical debt and making releases routine.</p>
+        </article>
+        <article class="card feature">
+          <div class="feature-head"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M4 12h16M4 17h7"/><circle cx="17" cy="7" r="2"/><circle cx="14" cy="17" r="2"/></svg></div><h3>Event-driven systems</h3></div>
+          <p>Kafka and Pub/Sub architectures that move high-throughput financial data with low latency and no lost messages.</p>
+        </article>
+        <article class="card feature">
+          <div class="feature-head"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.6-8A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9H7Z"/></svg></div><h3>Cloud and delivery</h3></div>
+          <p>GKE, Docker and GitHub Actions pipelines that take services from commit to production safely and fast.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="exp-h">
+      <div class="section-head">
+        <p class="kicker">Experience</p>
+        <h2 id="exp-h">Where I've shipped</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job">
+          <article class="card">
+            <header class="job-head">
+              <div class="co">RBC</div>
+              <div>
+                <h3>Senior Java Developer</h3>
+                <p class="org">J&amp;M Group, client Royal Bank of Canada · Toronto</p>
+              </div>
+              <span class="date current">Aug 2025 to present</span>
+            </header>
+            <ul class="points">
+              <li>Design and build Spring Boot microservices for high-volume financial transaction systems.</li>
+              <li>Build event-driven architecture on Apache Kafka for reliable asynchronous communication between services.</li>
+              <li>Lead the migration of <strong>80+ CI/CD pipelines</strong> from Jenkins to GitHub Actions.</li>
+              <li>Cut response times in critical services with Redis-based caching strategies.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul class="points">
+                <li>Handle high-throughput systems processing large-scale financial data with low latency and fault tolerance.</li>
+                <li>Develop secure REST APIs aligned with banking compliance and security standards.</li>
+                <li>Optimize deployment workflows to shorten release time and improve reliability.</li>
+                <li>Troubleshoot production issues across distributed systems to keep availability high.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>Java 17</li><li>Spring Boot</li><li>Kafka</li><li>Redis</li><li>GitHub Actions</li></ul>
+          </article>
+        </li>
+
+        <li class="job">
+          <article class="card card-quiet">
+            <header class="job-head">
+              <div class="co"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+              <div>
+                <h3>Relocation to Canada</h3>
+                <p class="org">India to Toronto</p>
+              </div>
+              <span class="date">Oct 2024 to Aug 2025</span>
+            </header>
+            <p class="muted">Moved internationally and settled in Toronto, while continuing to deepen cloud, CI/CD and backend skills for the North American market.</p>
+          </article>
+        </li>
+
+        <li class="job">
+          <article class="card">
+            <header class="job-head">
+              <div class="co">INF</div>
+              <div>
+                <h3>Senior Java Developer</h3>
+                <p class="org">Infosys · Kerala, India</p>
+              </div>
+              <span class="date">Jan 2023 to Oct 2024</span>
+            </header>
+            <ul class="points">
+              <li>Led development of <strong>50+ RESTful microservices</strong> in Spring Boot and Go across distributed systems.</li>
+              <li>Migrated <strong>100+ microservices</strong> from OpenShift to GCP, cutting infrastructure costs by an estimated 40%.</li>
+              <li>Built NGINX-based routing that balanced traffic and held latency down at peak load.</li>
+              <li>Delivered every project on schedule with a defect rate under 2%.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul class="points">
+                <li>Ran containerized applications on Google Kubernetes Engine for high availability and scale.</li>
+                <li>Designed asynchronous event-driven communication between services with Google Pub/Sub.</li>
+                <li>Secured REST APIs with Spring Boot and JWT-based authentication.</li>
+                <li>Used Hibernate and JPA for persistence; built Docker images bundling middleware and applications.</li>
+                <li>Worked in Scrum teams and took part in peer code reviews.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>Spring Boot</li><li>Go</li><li>GCP</li><li>GKE</li><li>Pub/Sub</li><li>NGINX</li></ul>
+          </article>
+        </li>
+
+        <li class="job">
+          <article class="card">
+            <header class="job-head">
+              <div class="co">INF</div>
+              <div>
+                <h3>Java Developer</h3>
+                <p class="org">Infosys · Kerala, India</p>
+              </div>
+              <span class="date">Dec 2021 to Dec 2022</span>
+            </header>
+            <ul class="points">
+              <li>Built <strong>40+ server-side REST APIs</strong> in Spring Boot and Go with 99.9% uptime.</li>
+              <li>Developed Go proxies for the GCP transformation programme.</li>
+              <li>Cut incident response times by 50% through root-cause analysis of production bottlenecks.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul class="points">
+                <li>Delivered SOAP APIs connecting more than 15 key legacy applications.</li>
+                <li>Designed APIs with OpenAPI 3.x.</li>
+                <li>Automated build, packaging and deployment of services on Apache TomEE with shell scripts.</li>
+                <li>Wrote architecture, configuration and troubleshooting documentation for the team.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>Spring Boot</li><li>Go</li><li>OpenAPI</li><li>SOAP</li><li>TomEE</li></ul>
+          </article>
+        </li>
+
+        <li class="job">
+          <article class="card">
+            <header class="job-head">
+              <div class="co">CM</div>
+              <div>
+                <h3>Java Developer</h3>
+                <p class="org">Coolminds Technologies · India</p>
+              </div>
+              <span class="date">Jul 2019 to Nov 2021</span>
+            </header>
+            <ul class="points">
+              <li>Built full-stack automation tools that cut manual work by 40%.</li>
+              <li>Developed custom APIs for client web apps, speeding up data retrieval by 60%.</li>
+              <li>Raised unit test coverage to 85% with JUnit and Mockito.</li>
+            </ul>
+            <details>
+              <summary>Show more</summary>
+              <ul class="points">
+                <li>Built REST APIs with Spring Boot and Struts, increasing development speed by 25%.</li>
+                <li>Built web modules in Core Java and Spring MVC, making the application 20% more responsive.</li>
+                <li>Wrote SQL queries and stored procedures; secured APIs with JWT authentication.</li>
+                <li>Worked with product managers and QA, and documented specs and API endpoints.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>Core Java</li><li>Spring MVC</li><li>Struts</li><li>JUnit</li><li>SQL</li></ul>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Case studies -->
+    <section class="section" id="case-studies" aria-labelledby="cases-h">
+      <div class="section-head">
+        <p class="kicker">Case studies</p>
+        <h2 id="cases-h">A closer look at three projects</h2>
+        <p class="section-lede">What the problem was, how I approached it, and what changed as a result.</p>
+      </div>
+
+      <div class="cases">
+        <article class="card case">
+          <div class="case-top">
+            <span class="case-metric">40%</span>
+            <span class="case-metric-label">lower infrastructure cost</span>
+          </div>
+          <p class="case-org">Infosys · 2022 to 2024</p>
+          <h3>Moving 100+ microservices from OpenShift to Google Cloud</h3>
+          <dl class="case-body">
+            <div><dt>Problem</dt><dd>A large estate of Java microservices ran on OpenShift. Infrastructure costs were high, and the services had to move to Google Cloud without interrupting the applications that depended on them.</dd></div>
+            <div><dt>Approach</dt><dd>Containerized services with Docker and moved them onto Google Kubernetes Engine. I developed Go proxies for the GCP transformation so traffic kept flowing during cut-over, and built NGINX-based routing to spread load at peak times. I also played a key developer role in the OpenShift to Anthos migration.</dd></div>
+            <div><dt>Result</dt><dd>More than 100 services migrated, infrastructure costs down by an estimated 40%, and high availability on GKE. The work earned three Infosys Insta Awards.</dd></div>
+          </dl>
+          <ul class="tags"><li>GKE</li><li>Anthos</li><li>Docker</li><li>Go</li><li>NGINX</li><li>Spring Boot</li></ul>
+        </article>
+
+        <article class="card case">
+          <div class="case-top">
+            <span class="case-metric">80+</span>
+            <span class="case-metric-label">pipelines migrated</span>
+          </div>
+          <p class="case-org">Royal Bank of Canada · 2025 to now</p>
+          <h3>Rebuilding CI/CD on GitHub Actions</h3>
+          <dl class="case-body">
+            <div><dt>Problem</dt><dd>Delivery for a set of banking services depended on Jenkins pipelines. Releases were slower than they needed to be, and every pipeline had to keep meeting the bank's compliance and security standards.</dd></div>
+            <div><dt>Approach</dt><dd>I led the migration of more than 80 pipelines from Jenkins to GitHub Actions, and optimized deployment workflows along the way while keeping the build and release steps aligned with banking standards.</dd></div>
+            <div><dt>Result</dt><dd>Release time came down and deployments became more reliable, with every pipeline on one modern platform.</dd></div>
+          </dl>
+          <ul class="tags"><li>GitHub Actions</li><li>Jenkins</li><li>CI/CD</li><li>Spring Boot</li></ul>
+        </article>
+
+        <article class="card case">
+          <div class="case-top">
+            <span class="case-metric">Low latency</span>
+            <span class="case-metric-label">under high volume</span>
+          </div>
+          <p class="case-org">Royal Bank of Canada · 2025 to now</p>
+          <h3>Event-driven services for financial transactions</h3>
+          <dl class="case-body">
+            <div><dt>Problem</dt><dd>High-volume transaction systems had to process large-scale financial data reliably, with low latency and no single point of failure between services.</dd></div>
+            <div><dt>Approach</dt><dd>I design and build Spring Boot microservices that communicate asynchronously through Apache Kafka. I added Redis-based caching to critical services, and secure the REST APIs to banking compliance standards.</dd></div>
+            <div><dt>Result</dt><dd>Reliable asynchronous communication across services, faster response times in critical paths, and fault-tolerant processing of high-throughput financial data.</dd></div>
+          </dl>
+          <ul class="tags"><li>Java 17</li><li>Spring Boot</li><li>Apache Kafka</li><li>Redis</li><li>REST</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="section" id="recommendations" aria-labelledby="recs-h">
+      <div class="section-head">
+        <p class="kicker">Recommendations</p>
+        <h2 id="recs-h">What colleagues say</h2>
+      </div>
+
+      <div class="quotes">
+        <figure class="card quote quote-feature">
+          <svg class="qmark" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 9C8 10.5 5 14.5 5 20v3h8v-8H9.5c.4-2.6 2-4.4 4.5-5.2L13 9Zm14 0c-5 1.5-8 5.5-8 11v3h8v-8h-3.5c.4-2.6 2-4.4 4.5-5.2L27 9Z"/></svg>
+          <blockquote>
+            <p>I had the pleasure of working with Jijo during a critical phase of GCP platform setup and legacy platform transformation, where I served as the Technical Architect. Jijo played a key role in the setup of the GCP middleware platform for microservices and a pivotal initiative that enabled our successful transition from a legacy platform to ESA. His production-ready PoC for Java EJB application hosted on WebLogic to TomEE containerization on GCP saved millions for the customers and was highly appreciated by the leadership team.</p>
+          </blockquote>
+          <figcaption>
+            <span class="avatar">SN</span>
+            <span><strong>Santhosh NK</strong><small>Lead Consultant, Infosys · Technical Architect on the project</small></span>
+          </figcaption>
+        </figure>
+
+        <figure class="card quote">
+          <svg class="qmark" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 9C8 10.5 5 14.5 5 20v3h8v-8H9.5c.4-2.6 2-4.4 4.5-5.2L13 9Zm14 0c-5 1.5-8 5.5-8 11v3h8v-8h-3.5c.4-2.6 2-4.4 4.5-5.2L27 9Z"/></svg>
+          <blockquote>
+            <p>It was a privilege to be Jijo's first reporting manager and witness his growth firsthand. When assembling my project team, I specifically selected Jijo for his exceptional potential, and he exceeded all expectations from day one, standing out as a proactive problem-solver with a keen eye for innovation. Jijo played a pivotal role in transforming legacy Fusion APIs into modern Microservices (MSA), seamlessly balancing dual responsibilities as both a developer and API designer. His deep technical expertise and strategic thinking ensured the transition was smooth, scalable, and aligned with architectural best practices.</p>
+          </blockquote>
+          <figcaption>
+            <span class="avatar">AG</span>
+            <span><strong>Abhik Himadri Ghose</strong><small>Project Manager · ex IBM, ex Infosys · First reporting manager</small></span>
+          </figcaption>
+        </figure>
+
+        <figure class="card quote">
+          <svg class="qmark" viewBox="0 0 32 32" aria-hidden="true"><path d="M13 9C8 10.5 5 14.5 5 20v3h8v-8H9.5c.4-2.6 2-4.4 4.5-5.2L13 9Zm14 0c-5 1.5-8 5.5-8 11v3h8v-8h-3.5c.4-2.6 2-4.4 4.5-5.2L27 9Z"/></svg>
+          <blockquote>
+            <p>I had the privilege of working with Jijo, and I can confidently say he is one of the most talented backend developers I have ever met. His expertise spans Google Cloud, NGINX, Kubernetes, Golang, and Java, and he consistently impressed me with his ability to design and implement robust, scalable solutions. What sets Jijo apart is his out-of-the-box thinking and creative problem-solving skills. He approaches challenges with a unique perspective and always finds efficient, innovative solutions.</p>
+          </blockquote>
+          <figcaption>
+            <span class="avatar">NK</span>
+            <span><strong>Nithesh Kumar</strong><small>Senior Software Engineer · Worked with Jijo</small></span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="recs-more"><a href="https://www.linkedin.com/in/jijo-daniel/details/recommendations/" target="_blank" rel="noopener">Read all recommendations on LinkedIn</a></p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-h">
+      <div class="section-head">
+        <p class="kicker">Skills</p>
+        <h2 id="skills-h">The stack I work in</h2>
+      </div>
+      <div class="skills">
+        <div class="card skill"><h3>Languages and frameworks</h3><ul class="tags"><li>Java 8–17</li><li>Spring Boot</li><li>Hibernate</li><li>JPA</li><li>Java EE</li><li>Go</li><li>Python</li><li>JUnit</li></ul></div>
+        <div class="card skill"><h3>Messaging</h3><ul class="tags"><li>Apache Kafka</li><li>Google Pub/Sub</li></ul></div>
+        <div class="card skill"><h3>Cloud and DevOps</h3><ul class="tags"><li>Google Cloud</li><li>GKE</li><li>Kubernetes</li><li>Docker</li><li>GitHub Actions</li><li>Jenkins</li></ul></div>
+        <div class="card skill"><h3>Architecture</h3><ul class="tags"><li>Microservices</li><li>Event-driven design</li><li>Distributed systems</li><li>High availability</li><li>Fault tolerance</li><li>API design</li></ul></div>
+        <div class="card skill"><h3>Performance</h3><ul class="tags"><li>Redis caching</li><li>NGINX</li><li>Async processing</li><li>Performance tuning</li></ul></div>
+        <div class="card skill"><h3>Data</h3><ul class="tags"><li>Oracle</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul></div>
+        <div class="card skill"><h3>Servers</h3><ul class="tags"><li>Apache TomEE</li><li>Apache Tomcat</li></ul></div>
+        <div class="card skill"><h3>Practice</h3><ul class="tags"><li>Agile and Scrum</li><li>TDD</li><li>Code review</li><li>Secure coding</li><li>Monitoring and logging</li></ul></div>
+      </div>
+    </section>
+
+    <!-- Recognition -->
+    <section class="section" id="recognition" aria-labelledby="rec-h">
+      <div class="section-head">
+        <p class="kicker">Recognition</p>
+        <h2 id="rec-h">Awards, certifications and education</h2>
+      </div>
+
+      <div class="cards-3 awards">
+        <article class="card award">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg></div>
+          <p class="date">Sep 2023</p>
+          <h3>Infosys Insta Award</h3>
+          <p>For significant contribution trialling the Infosys Migration Tool on migration work.</p>
+        </article>
+        <article class="card award">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg></div>
+          <p class="date">Mar 2023</p>
+          <h3>Infosys Insta Award</h3>
+          <p>For key developer roles in the OpenShift to Anthos microservices migration.</p>
+        </article>
+        <article class="card award">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg></div>
+          <p class="date">Dec 2022</p>
+          <h3>Infosys Insta Award</h3>
+          <p>For the key developer role in GCP transformation proxy releases.</p>
+        </article>
+      </div>
+
+      <div class="split">
+        <div class="card">
+          <h3 class="sub">Certifications</h3>
+          <ul class="list">
+            <li><span>Developing Containerized Applications on Google Cloud</span><em>Coursera</em></li>
+            <li><span>Java Full Stack Developer Specialization</span><em>Board Infinity</em></li>
+            <li><span>Certified Google Cloud Practitioner</span><em>Infosys</em></li>
+            <li><span>Certified Java SE 8 Developer</span><em>Infosys</em></li>
+            <li><span>Certified Java Programmer</span><em>Infosys</em></li>
+            <li><span>Certified JavaScript Programmer</span><em>Infosys</em></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="sub">Education</h3>
+          <ul class="list edu">
+            <li><span>Master of Computer Applications<small>Saintgits College of Engineering</small></span><em>2017–2019</em></li>
+            <li><span>Bachelor of Computer Applications<small>Parumala Mar Gregorious College</small></span><em>2013–2016</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-h">
+      <div class="contact-card">
+        <p class="status"><span class="dot"></span>Available now</p>
+        <h2 id="contact-h">Let's build something reliable</h2>
+        <p>I'm looking for senior Java and backend roles in Toronto or remote in Canada. The fastest way to reach me is email.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:jijodaniel95@gmail.com">Email jijodaniel95@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/jijo-daniel/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/jijo-daniel/details/recommendations/" target="_blank" rel="noopener">Read recommendations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Jijo Daniel · Toronto, Ontario</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

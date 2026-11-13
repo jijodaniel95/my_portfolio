@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: jijo-daniel
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: build
