@@ -111,7 +111,7 @@
 
   /* ---------- Scroll reveals ---------- */
   const revealSel = [
-    ".stat", ".section-head", ".feature", ".job", ".case", ".quote", ".skill", ".award", ".split > .card", ".contact-card",
+    ".stat", ".section-head", ".feature", ".job", ".case", ".arch", ".quote", ".skill", ".award", ".split > .card", ".contact-card",
   ].join(",");
   const items = document.querySelectorAll(revealSel);
 
@@ -186,4 +186,28 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", onScroll);
   onScroll();
+})();
+
+/* ---------- Light/dark toggle ---------- */
+(function () {
+  const root = document.documentElement;
+  const btn = document.getElementById("theme-toggle");
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (!btn) return;
+  const current = () => (root.getAttribute("data-theme") === "light" ? "light" : "dark");
+  const sync = () => {
+    const t = current();
+    btn.setAttribute("aria-label", t === "light" ? "Switch to dark theme" : "Switch to light theme");
+    btn.setAttribute("aria-pressed", t === "light");
+    if (meta) meta.setAttribute("content", t === "light" ? "#F4F6FB" : "#070B14");
+  };
+  btn.addEventListener("click", () => {
+    const next = current() === "light" ? "dark" : "light";
+    root.classList.add("theme-anim");
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    sync();
+    setTimeout(() => root.classList.remove("theme-anim"), 450);
+  });
+  sync();
 })();

@@ -4,6 +4,6 @@
   "version": "2.0.0",
   "description": "Jijo Daniel portfolio, plain static site",
   "scripts": {
-    "build": "rm -rf build && mkdir build && cp -R index.html styles.css script.js logo.png robots.txt sitemap.xml assets build/"
+    "build": "rm -rf build && mkdir build && cp -R index.html styles.css script.js arch.js logo.png robots.txt sitemap.xml assets build/"
   }
 }
