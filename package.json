@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node -e \"const fs=require('fs');fs.rmSync('build',{recursive:true,force:true});fs.mkdirSync('build');fs.copyFileSync('site/index.html','build/index.html')\"",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:react": "vite build"
   },
   "dependencies": {
     "react": "^19.1.0",
